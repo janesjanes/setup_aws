@@ -25,7 +25,7 @@ auth            sufficient      pam_rootok.so
 @include common-account
 @include common-session
 " > /etc/pam.d/chsh
-sudo chsh -s $(which zsh)' > sudo_setup.sh
+chsh -s $(which zsh)' > sudo_setup.sh
 
 sudo apt-get update
 sudo apt-get install tmux zsh python3-pip python3-opencv -y
